@@ -29,6 +29,8 @@
 .portfolio_content {
 	margin: 20px 0px;
 
+	max-width: 70%;
+
 	box-shadow: 5px 5px 2px grey;
 	border-radius: 5px;
 }
@@ -47,4 +49,5 @@
 
 .portfolio_content_description {
 	margin-left: 10px;
+	padding-right: 0px;
 }
