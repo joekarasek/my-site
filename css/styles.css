@@ -1,6 +1,15 @@
 
-
-
 body {
 	background-color: #A9E2AA;
+}
+
+
+/*JumboTron CSS
+=============*/
+
+.jumbotron {
+	background-image: url(../img/JumboFive.jpg);
+	background-size: 100%;
+	background-position: center center;
+
 }
