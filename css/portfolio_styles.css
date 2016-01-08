@@ -1,0 +1,20 @@
+/*CSS Styling Specific to portfolio.css
+=====================================*/
+
+.portfolio_content {
+	border: solid black 1px;
+	display: inline-block;
+}
+
+
+/*Alternates .portfolio_content left and right
+--------------------------------------------*/
+.portfolio_content:nth-child(2n) {
+	float: right;
+	clear: left;
+}
+
+.portfolio_content:nth-child(2n+1) {
+	float: left;
+	clear: right;
+}
