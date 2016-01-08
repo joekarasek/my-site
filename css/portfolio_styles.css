@@ -13,21 +13,35 @@
 .portfolio_content:nth-child(2n) {
 	float: right;
 	clear: left;
+	margin-right: 2%;
 }
 
 .portfolio_content:nth-child(2n+1) {
 	float: left;
 	clear: right;
+	margin-left: 2%;
 }
 
 
 /*Layout within each portfolio project
 ------------------------------------*/
 
+.portfolio_content {
+	margin: 20px 0px;
+
+	box-shadow: 5px 5px 2px grey;
+}
 .portfolio_content_thumbnail img {
 	float: right;
 	height: 100px;
 	display: inline-block;
+	border: solid black 1px;
+	box-shadow: 10px 10px 5px grey;
+
+	position: relative;
+	top: 20px;
+	left: 20px;
+
 }
 
 .portfolio_content_descriptor {
