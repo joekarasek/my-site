@@ -30,6 +30,7 @@
 	margin: 20px 0px;
 
 	box-shadow: 5px 5px 2px grey;
+	border-radius: 5px;
 }
 .portfolio_content_thumbnail img {
 	float: right;
@@ -44,6 +45,6 @@
 
 }
 
-.portfolio_content_descriptor {
-	/*fbnail and ßloat: left;*/
+.portfolio_content_description {
+	margin-left: 10px;
 }
