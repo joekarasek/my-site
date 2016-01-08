@@ -1,36 +1,35 @@
-# _{Application Name}_
+# Github Landing Page
 
-#### _{Brief description of application}, {Date of current version}_
+#### This is a landing page for joekarasek.github.com, 1.8.2016
 
-#### By _**{List of contributors}**_
+#### By _**Joseph Karasek**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This website project is intended to be a landing page for the github portfolio of Joseph Karasek. The current version is also a code review for the first week of Epicodus programming bootcamp, Intro to Programming. The site is intended to showcase my limited portfolio of projects, work experience, and interests/hobbies. The site is also intended to demonstrate an understanding of the material covered in the first week of Epicodus-Intro to Programming curriculum, including use of html, css, and bootstrap.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+This site can be view at <http://www.joekarasek.github.io/> in any standard modern browser (not tested for IE).
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+You may also clone the repository from <https://github.com/joekarasek/epicodus-intro-portfolio.git>.
+
+No special installation is required. All resources are included in the repository.
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+At this time, there are no known bugs. This site has not been tested for compatibiity with IE.
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Feel free to contact the author of this site at <joseph.karasek@gmail.com>. Additional methods for contacting the author can be found within the project on the contact page.
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+This site is built with basic website technologies (html, css, js) as well as the Bootstrap framework developed by Twitter.
 
 ### License
+
 MIT License.
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **Joseph Karasek**
