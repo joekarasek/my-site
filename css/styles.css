@@ -16,3 +16,11 @@ body {
 
 }
 
+.jumbotron > .container {
+	text-align: center;
+	color: black;
+	margin-top: 45px;
+	max-width: 80%;
+
+
+}
