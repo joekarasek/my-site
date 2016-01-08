@@ -33,6 +33,9 @@
 
 	box-shadow: 5px 5px 2px grey;
 	border-radius: 5px;
+
+	background-color: rgba(128, 128, 128, 0.64);
+
 }
 .portfolio_content_thumbnail img {
 	float: right;
@@ -50,4 +53,17 @@
 .portfolio_content_description {
 	margin-left: 10px;
 	padding-right: 0px;
+}
+
+
+/*Page Specific Styling
+---------------------*/
+
+body {
+	/*background-image: url(../img/mytent.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;*/
+
+	background-color: #C9FFF1;
+
 }
