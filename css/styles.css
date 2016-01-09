@@ -10,7 +10,7 @@ body {
 .jumbotron {
 	background-image: url(../img/JumboFive.jpg);
 	background-size: 100%;
-	background-position: center center;
+	background-position: center 63%;
 
 	height: 350px;
 
