@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Joe Karasek Site
+title: Joe Karasek
 email: joseph.karasek@gmail.com
-description: I'm a junior developer who lives in Portland, Oregon. I currently attend a coding bootcamp called epicodus. I love to build responsive websites as well as backend tools.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+description: I'm a junior developer with a background in project management and environmental science. After working as a crew leader and field botanist for several years, I decided to switch career paths and foster my passion for computer science. Currently a student at Epicodus, I have experience working with Javascript, PHP, and a number of frameworks including Silex (web-app micro-framework for PHP), Mocha and PHPUnit (testing frameworks for Javascript and PHP, respectively), and Jekyll (a blog-aware static site generator, which was used to build this site). In the next few months I hope to expand my skills to include knowledge of Drupal and Javascript frameworks including node.js, ember.js, and react.js.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://joekarase.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: joekarasek
 
 # Build settings
 markdown: kramdown
