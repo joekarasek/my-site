@@ -33,13 +33,21 @@ title: Home
 
 	<!-- Two -->
 		<section id="two" class="wrapper alt style2">
-			{% for project in site.data.projects %}
+			{% for job in site.data.workExperience %}
 			<section class="spotlight">
 				<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-					<h2>{{ project.name }}</h2>
-						<p>{{ project.text }}</p>
-					</div>
-				</section>
+					<!-- <h2><a href="{{ job.url }}">{{ job.name }}</a></h2> -->
+					<h2>{{ job.title }}</h2>
+					<h3>{{ job.company }}</h3>
+					<h3>{{ job.dates }}</h3>
+					<p>{{ job.responsibilities }}</p>
+					<ul>
+						{% for item in accomplishments %}
+							<li>{{ item }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</section>
 			{% endfor %}
 
 		</section>
