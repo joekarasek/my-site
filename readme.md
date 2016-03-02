@@ -2,7 +2,7 @@
 
 ### Setting up the project
 
-**All commands must be run from the ./src directory**
+**All commands must be run from the `./src` directory**
 
 To install ruby dependencies:
 
