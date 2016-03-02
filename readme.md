@@ -2,5 +2,16 @@
 
 ### Setting up the project
 
-* After cloning this repository, you will need to run bundler (_bundle install_) to install jekyll
-* Jekyll has a built in tool for local hosting, in terminal run (_bundle exec jekyll serve_ or _jekyll serve_)
+**All commands must be run from the ./src directory**
+
+To install ruby dependencies:
+
+    bundle install
+
+To compile site:
+
+    bundle exec jekyll build
+
+To compile and serve the site:
+
+    bundle exec jekyll serve
