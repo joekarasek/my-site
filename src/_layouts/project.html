@@ -1,0 +1,18 @@
+---
+layout: page
+---
+<p><a href="{{page.repo}}">See the repo on GitHub</a></p>
+<h5>Tags:</h5>
+<ul>
+  {% for tag in page.tags %}
+    <li>{{ tag }}</li>å
+  {% endfor %}
+</ul>
+
+{{content}}
+<hr>
+
+<h3>Images:</h3>
+{% for img in page.imgs %}
+<img src="{{ img }}" alt="">
+{% endfor %}
