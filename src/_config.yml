@@ -8,7 +8,7 @@
 # Site settings
 title: Joe Karasek
 email: joseph.karasek@gmail.com
-description: I'm a junior developer with a background in project management and environmental science. After working as a crew leader and field botanist for several years, I decided to switch career paths and foster my passion for computer science. Currently a student at Epicodus, I have experience working with Javascript, PHP, and a number of frameworks including Silex (web-app micro-framework for PHP), Mocha and PHPUnit (testing frameworks for Javascript and PHP, respectively), and Jekyll (a blog-aware static site generator, which was used to build this site). In the next few months I hope to expand my skills to include knowledge of Drupal and Javascript frameworks including node.js, ember.js, and react.js.
+description: A portal to my projects as a junior web app developer. 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://joekarase.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
