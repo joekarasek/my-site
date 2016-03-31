@@ -6,7 +6,6 @@ tags:
   - Node.js
   - Angular2
   - Javascript
-imgs:
-  - screenshot1.png
+teaser: I made a pretty cool Angular2 project.
 ---
 Angular2 is a fun framework to use!

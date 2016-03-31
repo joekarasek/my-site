@@ -1,20 +1,11 @@
-<div id="page-wrapper">
-<header id="header">
-  <h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-  <nav id="nav">
+<div class="page-wrapper">
+<header class="header">
+  <h1><a class="site-title" href="/">{{ site.title }}</a></h1>
+  <nav class="nav">
     <ul>
-      <li class="special">
-        <a href="#menu" class="menuToggle"><span>Menu</span></a>
-        <div id="menu">
-          <ul>
-            {% for my_page in site.pages %}
-              {% if my_page.title %}
-                <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-      </li>
+      <li><a class="page-link" href="/">Home</a></li>
+      <li><a class="page-link" href="/projects">Projects</a></li>
+      <li><a class="page-link" href="/foobar">Foo Bar</a></li>
     </ul>
   </nav>
 </header>

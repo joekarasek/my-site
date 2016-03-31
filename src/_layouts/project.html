@@ -1,7 +1,10 @@
 ---
 layout: page
 ---
-<p><a href="{{page.repo}}">See the repo on GitHub</a></p>
+{% if page.repo %}
+  <p><a href="{{page.repo}}" class="btn">See the repo on GitHub</a></p>
+{% endif %}
+
 <h5>Tags:</h5>
 <ul>
   {% for tag in page.tags %}
@@ -12,7 +15,9 @@ layout: page
 {{content}}
 <hr>
 
-<h3>Images:</h3>
-{% for img in page.imgs %}
-<img src="{{ img }}" alt="">
-{% endfor %}
+{% if page.imgs %}
+  <h3>Images:</h3>
+  {% for img in page.imgs %}
+  <img src="{{ img }}" alt="">
+  {% endfor %}
+{% endif %}

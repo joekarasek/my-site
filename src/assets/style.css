@@ -1,0 +1,26 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects .card {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .projects .card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 900px) {
+  .projects .card {
+    width: 31%;
+  }
+}
