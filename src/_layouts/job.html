@@ -1,0 +1,19 @@
+---
+layout: job
+---
+<h5>{{job.title}}</h5>
+<ul>
+  {% for tag in page.tags %}
+    <li>{{ tag }}</li>
+  {% endfor %}
+</ul>
+
+{{content}}
+<hr>
+
+{% if page.imgs %}
+  <h3>Images:</h3>
+  {% for img in page.imgs %}
+  <img src="{{ img }}" alt="">
+  {% endfor %}
+{% endif %}
