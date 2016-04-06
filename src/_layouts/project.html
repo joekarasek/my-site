@@ -2,22 +2,32 @@
 layout: page
 ---
 {% if page.repo %}
-  <p><a href="{{page.repo}}" class="btn">See the repo on GitHub</a></p>
+  <a href="{{page.repo}}" class="btn">Code</a>
 {% endif %}
 
-<h5>Tags:</h5>
+{% if page.demo %}
+  <a href="{{page.demo}}" class="btn">Demo</a>
+{% endif %}
+
 <ul>
   {% for tag in page.tags %}
-    <li>{{ tag }}</li>
+    <li class="chip">{{ tag }}</li>
   {% endfor %}
 </ul>
 
-{{content}}
-<hr>
+  <div class="row">
+    <div class="col m8">
 
-{% if page.imgs %}
-  <h3>Images:</h3>
-  {% for img in page.imgs %}
-  <img src="{{ img }}" alt="">
-  {% endfor %}
-{% endif %}
+      {{content}}
+
+    </div>
+
+    <div class="col m4">
+      {% if page.imgs %}
+      {% for img in page.imgs %}
+      <a href="{{img}}"><img src="{{ img }}" alt=""></a>
+      {% endfor %}
+      {% endif %}
+
+    </div>
+</div>
