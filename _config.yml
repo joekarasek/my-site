@@ -21,7 +21,3 @@ markdown: kramdown
 collections:
   projects:
     output: true
-  employment:
-    output: true
-  education:
-    output: true
