@@ -1,0 +1,24 @@
+---
+layout: default
+title: Home
+---
+<div id="header">
+  
+</div>
+<div>
+  Hi, I'm Joe Karasek, a Portland, OR code school student studying JavaScript, PHP, and other Back End Web Development Technologies. Please contact me with any questions!
+
+</div>
+<div class="projects">
+  {% for item in site.projects %}
+    <div>
+      <a href="{{item.url}}">{{ item.title }}</a>
+      {% if item.teaser %}
+        <p>{{ item.teaser }}</p>
+      {% endif %}
+      <a href="{{item.url}}">Read More</a>
+      <a href="{{item.repo}}" target="_blank">See the Repo on GitHub</a>
+    </div>
+  {% endfor %}
+</div>
+> joseph.karasek [at] gmail.com

@@ -1,14 +1,18 @@
 ---
-title: Hike Guide
+title: H?ke
 layout: project
+teaser: Hiking guide with live weather information and google maps.
 repo: https://github.com/joekarasek/epicodus-hike-guide
-demo:
+demo: 
 tags:
   - Javascript
   - Node.js
   - Ember
   - FireBase
   - SASS
+contributors:
+  - Sara Wagner <a href="https://github.com/swagner23q">GitHub</a>
+  - Josh Overly <a href="https://github.com/jos-h20/">GitHub</a>
 imgs:
   - screenshot1.png
 ---

@@ -1,26 +1,13 @@
-img {
-  max-width: 100%;
-  height: auto;
+nav {
+  background-color: black;
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+#header {
+  height: 100vh;
+  background-image: url("imgs/header.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
-.projects .card {
-  width: 100%;
-}
-
-@media (min-width: 600px) {
-  .projects .card {
-    width: 45%;
-  }
-}
-
-@media (min-width: 900px) {
-  .projects .card {
-    width: 31%;
-  }
+body {
 }
