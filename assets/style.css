@@ -42,3 +42,10 @@ nav {
       #about .about h3 {
         font-size: 18px;
       }
+
+
+.project {
+  border: solid 10px red;
+  padding: 10px;
+  margin: 10px;
+}

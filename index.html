@@ -35,7 +35,7 @@ title: Home
 </div>
 <div class="projects">
   {% for item in site.projects %}
-    <div>
+    <div class="project">
       <a href="{{item.url}}">{{ item.title }}</a>
       {% if item.teaser %}
         <p>{{ item.teaser }}</p>
