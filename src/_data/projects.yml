@@ -1,0 +1,12 @@
+- name: Machi Koro
+  url: https://github.com/joekarasek/sandbox-psuedo_koro.git
+  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  tools: Javascript, jQuery, Mocha (w/ Chai)
+- name: Coin Counter
+  url: https://github.com/joekarasek/sandbox-psuedo_koro.git
+  text: ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  tools: Javascript, jQuery, Mocha (w/ Chai)
+- name: Find and replace
+  url: https://github.com/joekarasek/sandbox-psuedo_koro.git
+  text: This project is great for pracicing Silex.
+  tools: Javascript, jQuery, Mocha (w/ Chai)
