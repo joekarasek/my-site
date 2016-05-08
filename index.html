@@ -29,20 +29,22 @@ title: Home
   </div>
 </div>
 
-<div>
-  Hi, I'm Joe Karasek, a Portland, OR code school student studying JavaScript, PHP, and other Back End Web Development Technologies. Please contact me with any questions!
-
-</div>
 <div class="projects">
-  {% for item in site.projects %}
-    <div class="project">
-      <a href="{{item.url}}">{{ item.title }}</a>
-      {% if item.teaser %}
-        <p>{{ item.teaser }}</p>
-      {% endif %}
-      <a href="{{item.url}}">Read More</a>
-      <a href="{{item.repo}}" target="_blank">See the Repo on GitHub</a>
-    </div>
-  {% endfor %}
+  <div id="projects--header">
+    <h3>Portfolio</h3>
+  </div>
+
+  <div id="projects--content">
+    {% for item in site.projects %}
+      <div class="project">
+        <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
+        {% if item.teaser %}
+          <p>{{ item.teaser }}</p>
+        {% endif %}
+        <a href="{{item.url}}">Read More</a>
+        <a href="{{item.repo}}" target="_blank">See the Repo on GitHub</a>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 > joseph.karasek [at] gmail.com
