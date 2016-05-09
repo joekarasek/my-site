@@ -26,7 +26,8 @@ To compile site:
 
 To compile and serve the site:
 
-    bundle exec jekyll serve
+
+
 
 ## Questions/Comments
 

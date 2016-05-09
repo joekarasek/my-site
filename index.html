@@ -38,13 +38,14 @@ title: Home
     {% for item in site.projects %}
       <div class="project" style="">
         <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
+        {% if item.demo %}<a href="{{item.demo}}" target="_blank">Live Demo</a>{% endif %}
+        {% if item.repo %}<a href="{{item.repo}}" target="_blank">See the Code</a>{% endif %}
         {% if item.teaser %}
           <p>{{ item.teaser }}</p>
         {% endif %}
+        {{ item.baseurl }}
         <a href="{{item.url}}">Read More</a>
-        <a href="{{item.repo}}" target="_blank">See the Repo on GitHub</a>
       </div>
     {% endfor %}
   </div>
 </div>
-> joseph.karasek [at] gmail.com
