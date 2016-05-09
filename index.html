@@ -29,7 +29,7 @@ title: Home
   </div>
 </div>
 
-<div class="projects">
+<div id="projects">
   <div id="projects--header">
     <h3>Portfolio</h3>
   </div>
@@ -37,13 +37,19 @@ title: Home
   <div id="projects--content">
     {% for item in site.projects %}
       <div class="project" style="">
+        <img src="{{ item.url | remove: "index.html" | append: "screenshot1.png" }}">
         <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
-        {% if item.demo %}<a href="{{item.demo}}" target="_blank">Live Demo</a>{% endif %}
-        {% if item.repo %}<a href="{{item.repo}}" target="_blank">See the Code</a>{% endif %}
+        <ul>
+          {% for tag in item.tags %}
+            <li class="chip">{{ tag }}</li>
+          {% endfor %}
+        </ul>
+        {% if item.demo %}<a href="{{item.demo}}" class="btn" target="_blank">Live Demo</a>{% endif %}
+        {% if item.repo %}<a href="{{item.repo}}" class="btn" target="_blank">See the Code</a>{% endif %}
         {% if item.teaser %}
           <p>{{ item.teaser }}</p>
         {% endif %}
-        {{ item.baseurl }}
+        <!-- {{ item.url | remove: "index.html" | append: "screenshot1.png" }} -->
         <a href="{{item.url}}">Read More</a>
       </div>
     {% endfor %}

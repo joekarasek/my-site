@@ -50,6 +50,12 @@ nav {
   margin: 10px;
 }
 
-#projects--header {
-  text-align: center;
-}
+  #projects--header {
+    text-align: center;
+  }
+
+  .project img {
+    max-width: 100px;
+    max-height: 100px;
+    float: left;
+  }
