@@ -5,7 +5,7 @@ teaser: A mock version of the news site Bustle built in one day in Ember.
 repo: https://github.com/joekarasek/Advanced-RPS
 demo: http://joekarasek.github.io/epicodus-ember-bustle/
 tags:
-  - JS
+  - Javascript
   - Ember.js
   - Firebase DB
 contributors:

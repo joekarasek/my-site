@@ -5,12 +5,12 @@ teaser: PHP/Silex based Rock, Paper, Scissors with 7-choices, player sign-in, st
 repo: https://github.com/joekarasek/Advanced-RPS
 demo:
 tags:
-  - php
-  - phpUnit
-  - mySQL
+  - Php
+  - PhpUnit
   - Silex
   - Twig
-  - javascript
+  - mySQL
+  - Javascript
 contributors:
   - Michael Lor <a href="https://michaellor.github.io/">GitHub</a>
   - Aundra Miller <a href="https://milleraundra.github.io/">GitHub</a>
