@@ -6,6 +6,16 @@ body {
 nav {
   background-color: black;
 }
+  nav .brand-logo {
+    color: #26A69A;
+  }
+  nav ul a {
+   color: #26A69A;
+  }
+
+footer.page-footer {
+  background-color: black;
+}
 
 #header {
   height: 100vh;
@@ -20,10 +30,14 @@ nav {
     vertical-align: middle;
     display: inline-block;
     color: white;
+    text-align: center;
     opacity: 1;
+    background-color: rgba(38, 166, 154, 0.45);
+    padding: 0px 45px 5px 45px;
+    border-radius: 10px;
   }
     #header--logo h1 {
-      text-decoration: underline;
+      /*text-decoration: underline;*/
     }
 
 #about {
@@ -71,3 +85,7 @@ nav {
   .project-img img {
     max-width: 100%;
   }
+
+.btn {
+  background-color: rgba(38, 166, 154, 0.45);
+}
