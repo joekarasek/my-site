@@ -8,23 +8,25 @@ title: Home
     <h2>Web Developer</h2>
   </div>
 </div>
+
 <div id="about">
   <div id="about--main">
     <h2>About Joe Karasek</h2>
     <p>Joe is an awesome guy and a great programmer and you would be an idiot not to hire him right away to build awesome websites and programs.</p>
   </div>
+
   <div id="about--skills">
     <div class="about">
       <h3>Javascript</h3>
-      <p>jQuery, Node, Ember, Angular2, Mocha, Chai</p>
+      <p>jQuery, Node, Ember, Angular2, Gulp, Mocha, Chai</p>
     </div>
     <div class="about">
-      <h3>PHP</h3>
-      <p>Silex, Twig, Drupal 7, Drupal 8, mySQL</p>
+      <h3>Php</h3>
+      <p>Silex, Drupal 7, Drupal 8, mySQL, PhpUnit</p>
     </div>
     <div class="about">
       <h3>Skills/Tools</h3>
-      <p>HTML, CSS, Javascript, PHP</p>
+      <p>HTML, CSS, Javascript, Php, GIT, Gulp</p>
     </div>
   </div>
 </div>
@@ -36,22 +38,31 @@ title: Home
 
   <div id="projects--content">
     {% for item in site.projects %}
+
       <div class="project" style="">
+
         <img src="{{ item.url | remove: "index.html" | append: "screenshot1.png" }}">
+
         <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
+
         <ul>
           {% for tag in item.tags %}
             <li class="chip">{{ tag }}</li>
           {% endfor %}
         </ul>
-        {% if item.demo %}<a href="{{item.demo}}" class="btn" target="_blank">Live Demo</a>{% endif %}
+
+        {% if item.demo %}<a href="{{item.demo}}" class="btn" target="_blank">Live Demo</a>{% else %}<a href="#" class="btn" disabled=true>Demo Coming Soon</a>{% endif %}
+
         {% if item.repo %}<a href="{{item.repo}}" class="btn" target="_blank">See the Code</a>{% endif %}
+
         {% if item.teaser %}
           <p>{{ item.teaser }}</p>
         {% endif %}
-        <!-- {{ item.url | remove: "index.html" | append: "screenshot1.png" }} -->
+
         <a href="{{item.url}}">Read More</a>
+
       </div>
+
     {% endfor %}
   </div>
 </div>

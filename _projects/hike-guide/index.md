@@ -17,7 +17,6 @@ imgs:
   - screenshot1.png
   - screenshot2.png
   - screenshot3.png
-  - screenshot4.png
 ---
 H?KE is a web application that provides basic information and weather on hiking trails around the Portland area. The site pulls in information on hiking trails, and uses that information to find the weather for each location.
 
