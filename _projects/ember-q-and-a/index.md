@@ -8,8 +8,8 @@ demo: http://joekarasek.github.io/epicodus-ember-QandA
 tags:
   - Javascript
   - Node.js
-  - Ember
-  - FireBase
+  - Ember.js
+  - Firebase DB
   - Materialize
 imgs:
   - screenshot1.png
