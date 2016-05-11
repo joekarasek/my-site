@@ -27,7 +27,7 @@ gulp.task('scss', function () {
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
     .pipe(rename({dirname: './'}))
-    .pipe(gulp.dest('assets/'));
+    .pipe(gulp.dest('_site/assets/'));
 });
 
 
