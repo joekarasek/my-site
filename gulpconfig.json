@@ -1,0 +1,9 @@
+{
+  "currentTheme": [
+    "./all/themes/YOUR_CUSTOM_THEME_NAME"
+  ],
+  "stylesheets": [
+    "./_scss/**/*.scss"
+  ],
+  "proxyUrl": "localhost:8888"
+}
