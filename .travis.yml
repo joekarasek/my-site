@@ -1,2 +1,4 @@
 language: node
 script: npm run build
+before_install:
+  - rvm install 2.2.2
