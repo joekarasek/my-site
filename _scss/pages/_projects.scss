@@ -8,20 +8,6 @@
   justify-content: space-around;
 }
 
-  .project {
-    border: solid 1px tomato;
-    padding: 10px;
-    margin: 5px;
-    width: 45%;
-  }
-
-  .project img {
-    max-width: 100px;
-    max-height: 100px;
-    float: left;
-    height: 100%;
-  }
-
-  .project-img img {
-    max-width: 100%;
-  }
+.project-img img {
+  max-width: 100%;
+}
