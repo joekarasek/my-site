@@ -52,7 +52,16 @@ gulp.task('scss:watch', ['scss'], function () {
 //   });
 // });
 
+gulp.task('watch', [
+  'scss:watch'
+]);
 
+
+////////////////////// Build ////////////////////
+
+gulp.task('build', [
+  'scss'
+]);
 
 ////////////////////// Default: Serve and Watch ////////////////////
 
