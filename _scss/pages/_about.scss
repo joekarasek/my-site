@@ -1,0 +1,17 @@
+#about {
+  background-color: grey;
+}
+  #about--skills {
+    padding: 150px 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+    #about--skills .about {
+      background-color: black;
+      width: 25%;
+      padding: 5px 15px;
+    }
+      #about .about h3 {
+        font-size: 18px;
+      }
+
