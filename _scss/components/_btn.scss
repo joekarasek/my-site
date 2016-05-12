@@ -1,7 +1,12 @@
-.btn {
-  background-color: rgba(38, 166, 154, 0.45);
-  &--alt {
-    background-color: gray;
+$btn-color: #9DD7D1;
+$btn-color-disabled: #C7C7C7;
 
+.btn {
+  background-color: $btn-color;
+  &--alt {
+    background-color: $btn-color-disabled;
+    &:hover {
+      background-color: $btn-color-disabled;
+    }
   }
 }
