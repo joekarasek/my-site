@@ -39,29 +39,7 @@ title: Home
   <div id="projects--content">
     {% for item in site.projects %}
 
-      <div class="card" style="">
-
-        <img src="{{ item.url | remove: "index.html" | append: "screenshot1.png" }}">
-
-        <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
-
-        <ul>
-          {% for tag in item.tags %}
-            <li class="chip">{{ tag }}</li>
-          {% endfor %}
-        </ul>
-
-        {% if item.demo %}<a href="{{item.demo}}" class="btn" target="_blank">Live Demo</a>{% else %}<a href="#" class="btn" disabled=true>Demo Coming Soon</a>{% endif %}
-
-        {% if item.repo %}<a href="{{item.repo}}" class="btn" target="_blank">See the Code</a>{% endif %}
-
-        {% if item.teaser %}
-          <p>{{ item.teaser }}</p>
-        {% endif %}
-
-        <a href="{{item.url}}">Read More</a>
-
-      </div>
+      {% include project-tile.html %}
 
     {% endfor %}
   </div>
