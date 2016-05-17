@@ -1,3 +1,5 @@
+$font-color: #26A69A;
+
 #header {
   height: 100vh;
   // background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) ), url('imgs/joe.png');
@@ -20,10 +22,10 @@
   #header--logo {
     vertical-align: middle;
     display: inline-block;
-    color: white;
+    color: $font-color;
     text-align: center;
     opacity: 1;
-    background-color: rgba(38, 166, 154, 0.45);
+    // background-color: rgba(38, 166, 154, 0.45);
     padding: 0px 45px 5px 45px;
     border-radius: 10px;
   }
