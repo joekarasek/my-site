@@ -9,4 +9,8 @@ $btn-color-disabled: #C7C7C7;
       background-color: $btn-color-disabled;
     }
   }
+  &[disabled]:hover {
+    background-color: #9DD7D1;
+
+  }
 }

@@ -13,4 +13,16 @@
     float: left;
     height: 100%;
   }
+  h4 {
+    text-align: center;
+    a {
+      color: #26A69A;
+      &:hover {
+        text-decoration: underline;
+      }
+      &[disabled] {
+        pointer-events: none;
+      }
+    }
+  }
 }
