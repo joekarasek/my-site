@@ -1,31 +1,31 @@
 <div class="card" style="">
 
   <div class="row">
+    <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
+
+    <div class="project--tile--links">
+      {% if item.demo %}<a href="{{item.demo}}" class="btn" target="_blank">Live Demo</a>{% else %}<a href="#" class="btn" disabled=true>Demo Coming</a>{% endif %}
+      {% if item.repo %}<a href="{{item.repo}}" class="btn" target="_blank">See the Code</a>{% endif %}
+    </div>
+
+    <div class="col s9">
+      <h5>Technologies Used:</h5>
+      <ul>
+        {% for tag in item.tags %}
+          <li class="chip">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+
+      <h5>Description:</h5>
+      {% if item.teaser %}
+        <p>{{ item.teaser }}  <a href="{{item.url}}">Read More</a></p>
+      {% endif %}
+    </div>
 
     <div class="col s3">
       <img src="{{ item.url | remove: "index.html" | append: "screenshot1.png" }}">
     </div>
 
-    <div class="col s9">
-      <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
-      {% if item.demo %}<a href="{{item.demo}}" class="btn" target="_blank">Live Demo</a>{% else %}<a href="#" class="btn" disabled=true>Demo Coming</a>{% endif %}
-      {% if item.repo %}<a href="{{item.repo}}" class="btn" target="_blank">See the Code</a>{% endif %}
-    </div>
-
   </div>
-
-  <h5>Technologies Used:</h5>
-  <ul>
-    {% for tag in item.tags %}
-      <li class="chip">{{ tag }}</li>
-    {% endfor %}
-  </ul>
-
-
-  <h5>Description:</h5>
-  {% if item.teaser %}
-    <p>{{ item.teaser }}  <a href="{{item.url}}">Read More</a></p>
-  {% endif %}
-
 
 </div>
