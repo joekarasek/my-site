@@ -1,12 +1,22 @@
 #header {
   height: 100vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) ), url('imgs/joe.png');
+  // background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) ), url('imgs/joe.png');
   background-position: center center;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+  #header--image {
+    // background: url('imgs/joe.png');
+  }
+  #header--image>img {
+    width: 300px;
+    height: 300px;
+    border-radius: 230px;
+  }
+
   #header--logo {
     vertical-align: middle;
     display: inline-block;
@@ -17,6 +27,3 @@
     padding: 0px 45px 5px 45px;
     border-radius: 10px;
   }
-    #header--logo h1 {
-      /*text-decoration: underline;*/
-    }

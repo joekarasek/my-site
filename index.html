@@ -2,34 +2,9 @@
 layout: default
 title: Home
 ---
-<div id="header">
-  <div id="header--logo">
-    <h1>Joe Karasek</h1>
-    <h3>Web Developer</h3>
-  </div>
-</div>
+{% include header.html %}
 
-<div id="about">
-  <div id="about--main">
-    <h2>About Joe Karasek</h2>
-    <p>Joe is an awesome guy and a great programmer and you would be an idiot not to hire him right away to build awesome websites and programs.</p>
-  </div>
-
-  <div id="about--skills">
-    <div class="about">
-      <h3>Javascript</h3>
-      <p>jQuery, Node, Ember, Angular2, Gulp, Mocha, Chai</p>
-    </div>
-    <div class="about">
-      <h3>Php</h3>
-      <p>Silex, Drupal 7, Drupal 8, mySQL, PhpUnit</p>
-    </div>
-    <div class="about">
-      <h3>Skills/Tools</h3>
-      <p>HTML, CSS, Javascript, Php, GIT, Gulp</p>
-    </div>
-  </div>
-</div>
+{% include about.html %}
 
 <div id="projects">
   <div id="projects--header">
