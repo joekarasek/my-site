@@ -1,0 +1,106 @@
+.btn {
+  background-color: #9DD7D1; }
+  .btn--alt {
+    background-color: #C7C7C7; }
+    .btn--alt:hover {
+      background-color: #C7C7C7; }
+  .btn[disabled]:hover {
+    background-color: #9DD7D1; }
+
+#projects #projects--header {
+  color: #26A69A; }
+
+.card {
+  padding: 10px;
+  margin: 5px;
+  width: 45%; }
+  @media screen and (max-width: 960px) {
+    .card {
+      width: 95%; } }
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px; }
+  .card h4 {
+    text-align: center; }
+    .card h4 a {
+      color: #26A69A; }
+      .card h4 a:hover {
+        text-decoration: underline; }
+      .card h4 a[disabled] {
+        pointer-events: none; }
+  .card .project--tile--links {
+    text-align: center;
+    margin-bottom: 20px; }
+
+footer.page-footer {
+  background-color: white; }
+
+#header {
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#header--image > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 230px; }
+
+#header--logo {
+  vertical-align: middle;
+  display: inline-block;
+  color: #26A69A;
+  text-align: center;
+  opacity: 1;
+  padding: 0px 45px 5px 45px;
+  border-radius: 10px; }
+  #header--logo h4 {
+    margin-top: -20px;
+    margin-bottom: 40px; }
+
+nav {
+  background-color: white; }
+
+nav .brand-logo {
+  color: #26A69A; }
+
+nav ul a {
+  color: #26A69A; }
+
+body {
+  color: black;
+  font-family: sans-serif; }
+
+#about {
+  background-color: grey; }
+
+#about--skills {
+  padding: 150px 0px;
+  display: flex;
+  justify-content: space-around; }
+
+#about--skills .about {
+  background-color: black;
+  width: 25%;
+  padding: 5px 15px; }
+
+#about .about h3 {
+  font-size: 18px; }
+
+#projects--header {
+  text-align: center; }
+
+#projects--content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.project-img img {
+  max-width: 100%; }
+
+body {
+  z-index: 42; }
