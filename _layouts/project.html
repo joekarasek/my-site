@@ -1,45 +1,44 @@
 ---
 layout: page
 ---
-<div class="row">
-  <div class="col m8">
+<div class="container project--page">
 
-    <h1>{{ page.title }}</h1>
-    {% if page.repo %}
-    <a href="{{page.repo}}" class="btn" target="_blank">Code</a>
-    {% endif %}
+  <div class="row">
+    <h4><a href="{{page.url}}">{{ page.title }}</a></h4>
 
-    {% if page.demo %}
-    <a href="{{page.demo}}" class="btn" target="_blank">Demo</a>
-    {% endif %}
+    <div class="project--tile--links">
+      {% if page.demo %}<a href="{{page.demo}}" class="btn" target="_blank">Live Demo</a>{% else %}<a href="#" class="btn" disabled=true>Demo Coming</a>{% endif %}
+      {% if page.repo %}<a href="{{page.repo}}" class="btn" target="_blank">See the Code</a>{% endif %}
+    </div>
 
-    <h4>Tools</h4>
-    <ul>
-      {% for tag in page.tags %}
-      <li class="chip">{{ tag }}</li>
+    <div class="col s9">
+      <h5>Technologies Used:</h5>
+      <ul>
+        {% for tag in page.tags %}
+          <li class="chip">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+
+      <h5>Description:</h5>
+      {{content}}
+
+      <h5>Contributors</h5>
+      <ul>
+        {% for contributor in page.contributors %}
+        <li class="contributor">{{ contributor }}</li>
+        {% endfor%}
+      </ul>
+    </div>
+
+    <div class="col s3">
+      {% if page.imgs %}
+      <h4>Images</h4>
+      {% for img in page.imgs %}
+        <a href="{{ img }}"><img src="{{ img }}" alt=""></a>
       {% endfor %}
-    </ul>
-
-    <h4>Description</h4>
-    {{content}}
-
-    <h4>Contributors</h4>
-    <ul>
-      {% for contributor in page.contributors %}
-      <li class="contributor">{{ contributor }}</li>
-      {% endfor%}
-    </ul>
+      {% endif %}
+    </div>
 
   </div>
 
-  <div class="project-img col m4">
-
-    {% if page.imgs %}
-    <h4>Images</h4>
-    {% for img in page.imgs %}
-      <a href="{{ img }}"><img src="{{ img }}" alt=""></a>
-    {% endfor %}
-    {% endif %}
-
-  </div>
 </div>
