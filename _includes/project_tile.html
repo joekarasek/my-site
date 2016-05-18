@@ -8,7 +8,7 @@
       {% if item.repo %}<a href="{{item.repo}}" class="btn" target="_blank">See the Code</a>{% endif %}
     </div>
 
-    <div class="col s9">
+    <div class="col {% if item.imgs %}s9{% else %}s12{% endif %}">
       <h5>Technologies Used:</h5>
       <ul>
         {% for tag in item.tags %}
@@ -22,9 +22,11 @@
       {% endif %}
     </div>
 
-    <div class="col s3">
-      <img src="{{ item.url | remove: "index.html" | append: "screenshot1.png" }}">
-    </div>
+    {% if item.imgs %}
+      <div class="col s3">
+        <img src="{{ item.url | remove: "index.html" }}{{ item.imgs | first}}">
+      </div>
+    {% endif %}
 
   </div>
 
