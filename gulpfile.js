@@ -9,16 +9,17 @@ var config = require('./gulpconfig.json');
 var sass = require('gulp-sass');
 var sassGlob = require('gulp-sass-glob');
 var rename = require('gulp-rename');
+var execSync = require('child_process').execSync;
+var imagemin = require('gulp-imagemin');
+var babel = require('gulp-babel');
 
-
-
-//////////////////////////// Drush Commands //////////////////////////
-
-// gulp.task('drushCacheClear',
-//   shell.task([ 'drush cc all' ])
-// );
-
-
+// run shell commands with `sh('ls')`;
+function sh(cmd) {
+  var result = execSync(cmd, {
+    encoding: 'utf8'
+  });
+  console.log(result);
+}
 
 //////////////////////////////// SASS //////////////////////////////
 
@@ -27,12 +28,60 @@ gulp.task('scss', function () {
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
     .pipe(rename({dirname: './'}))
-    .pipe(gulp.dest('assets/'));
+    .pipe(gulp.dest('_site/assets/'))
+    .on('end', function() {
+      browserSync.reload();
+    });
 });
 
+gulp.task('scss:watch', function () {
+  gulp.watch(config.stylesheets, ['scss']);
+});
 
+////////////////////////////// Jekyll ////////////////////////////
 
-////////////////////////////// Watchers ////////////////////////////
+gulp.task('jekyll', function () {
+  sh('bundle exec jekyll build --incremental');
+  browserSync.reload();
+
+});
+
+gulp.task('jekyll:watch', function() {
+  gulp.watch([
+    '_includes/**',
+    '_layouts/**',
+    '_posts/**',
+    '_projects/**',
+    'index.html'
+  ], [ 'jekyll' ]);
+});
+
+/////////
+
+gulp.task('imgs', function() {
+  return gulp.src('_assets/imgs/**/*.{jpg,jpeg}')
+  .pipe(imagemin())
+  .pipe(gulp.dest('_site/assets/imgs'));
+});
+
+gulp.task('imgs:watch', function () {
+  gulp.watch('_assets/imgs/**', ['imgs']);
+});
+
+/////////
+
+gulp.task('js', () => {
+	return gulp.src('_js/*.js')
+		.pipe(babel({
+			presets: ['es2015']
+		}))
+		.pipe(gulp.dest('_site/js'));
+});
+
+gulp.task('js:watch', ['js'], function () {
+  gulp.watch('_js/*.js', ['js']);
+});
+
 
 // gulp.task('module:watch', function() {
 //   gulp.watch(config.modules, ['drushCacheClear'], function() {
@@ -40,11 +89,7 @@ gulp.task('scss', function () {
 //   });
 // });
 
-gulp.task('scss:watch', ['scss'], function () {
-  gulp.watch(config.stylesheets, ['scss'], function() {
-    browserSync.reload();
-  });
-});
+
 
 // gulp.task('theme:watch', function() {
 //   gulp.watch(config.themes, ['drushCacheClear'], function() {
@@ -53,28 +98,33 @@ gulp.task('scss:watch', ['scss'], function () {
 // });
 
 gulp.task('watch', [
-  'scss:watch'
+  'scss:watch',
+  'jekyll:watch',
+  'imgs:watch',
+  'js:watch'
 ]);
 
 
 ////////////////////// Build ////////////////////
 
 gulp.task('build', [
-  'scss'
+  'scss',
+  'jekyll',
+  'imgs',
+  'js'
 ]);
 
-////////////////////// Default: Serve and Watch ////////////////////
-
-gulp.task('default', function() {
-
+gulp.task('serve', function() {
   // Initiate browserSync
   browserSync.init({
-    proxy: config.proxyUrl,
-    port: 8889
+    server: {
+      baseDir: "./_site"
+    }
   });
-
-  // Start Watchers
-  // gulp.start('module:watch');
-  gulp.start('scss:watch');
-  // gulp.start('theme:watch');
 });
+////////////////////// Default: Serve and Watch ////////////////////
+
+gulp.task('default', [
+  'watch',
+  'serve'
+]);
