@@ -1,37 +1,42 @@
-# Welcome to the ReadMe for the notes to my website
+# **Joe Karasek**
 
-### _By **Joe Karasek**_
+### _Web Developer Portfolio, 5.20.2016_
 
 ## Description
 
-_This site is the professional portfolio of Joe Karasek's web development work. It is intended to showcase his work, including projects from the Epicodus._
+_This site is the professional portfolio of Joe Karasek's web development work. It is intended to showcase his work._
 
-_Currently the goal of the site is to have one static page displaying all the information a user could want (projects), with links to project pages for each project, as well as a contact form. Future iterations will incorporate my blog._
+_This site uses [Jekyll](https://jekyllrb.com/), a static website generator._
 
 ### Technologies used
 
-_This site was created using the Jekyll static site generator and is hosted through the github hosting service._
+- Gulp
+- Jekyll
+- Node.js
+- Scss
+- Travis CI
 
 ### Setting up the project
 
-**All commands must be run from the `./src` directory**
+`npm install`
 
-To install ruby dependencies:
+### Buildiing
 
-    bundle install
+`npm run build`
 
-To compile site:
+### Launching Dev
 
-    bundle exec jekyll build
+Includes build and launches all watches.
 
-To compile and serve the site:
+`npm run start`
 
+### Deploy
 
-
+`npm deploy`
 
 ## Questions/Comments
 
-_Feel free to get a hold of the author of this site through his github account of at joe@joekaraek.com._
+_Feel free to get a hold of the author of this site through his github account or at joe@joekaraek.com._
 
 ## License
 
