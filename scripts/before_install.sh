@@ -6,5 +6,6 @@ openssl aes-256-cbc -K $encrypted_22009518e18d_key -iv $encrypted_22009518e18d_i
 rm travis-deploy.enc # Don't need it anymore
 chmod 600 travis-deploy
 # mv travis-deploy ~/.ssh/id_rsa
-ls ~/.ssh
-# cat ~/.ssh/travis-deploy
+
+echo -e "Host 159.203.228.62" >> ~/.ssh/config
+echo -e "\tStrictHostKeyChecking no\n" >> ~/.ssh/config
