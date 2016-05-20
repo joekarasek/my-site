@@ -10,6 +10,8 @@ destination: _site
 title: Joe Karasek
 email: joseph.karasek@gmail.com
 description: A portal to my projects as a junior web app developer.
+exclude:
+  - node_modules
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://joekarase.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
