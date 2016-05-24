@@ -28,11 +28,11 @@ _This site uses [Jekyll](https://jekyllrb.com/), a static website generator._
 
 Includes build and launches all watches.
 
-`npm run start`
+`npm start`
 
 ### Deploy
 
-`npm deploy`
+`npm run deploy`
 
 ## Questions/Comments
 

@@ -4,7 +4,7 @@
     <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
 
     <div class="project--tile--links">
-      {% if item.demo %}<a href="{{item.demo}}" class="btn" target="_blank">Live Demo</a>{% else %}<a href="#" class="btn" disabled=true>Demo Coming</a>{% endif %}
+      {% if item.demo %}<a href="{{item.demo}}" class="btn" target="_blank">Live Demo</a>{% else %}{% endif %}
       {% if item.repo %}<a href="{{item.repo}}" class="btn" target="_blank">See the Code</a>{% endif %}
     </div>
 
