@@ -42,6 +42,8 @@ gulp.task('scss:watch', function () {
 
 gulp.task('jekyll', function () {
   sh('bundle exec jekyll build --incremental');
+  sh('gulp scss');
+  sh('gulp imgs');
   browserSync.reload();
 
 });

@@ -14,8 +14,8 @@ contributors:
   - Sara Wagner <a href="https://github.com/swagner23q">GitHub</a>
   - Josh Overly <a href="https://github.com/jos-h20/">GitHub</a>
 imgs:
-  - screenshot1.png
-  - screenshot2.png
+  - screenshot1.jpg
+  - screenshot2.jpg
 ---
 H?KE is a web application that provides basic information and weather on hiking trails around the Portland area. The site pulls in information on hiking trails, and uses that information to find the weather for each location.
 
