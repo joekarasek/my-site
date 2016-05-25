@@ -1,2 +1,4 @@
 ---
 BUNDLE_DISABLE_SHARED_GEMS: '1'
+BUNDLE_PATH: '.bundle/ruby'
+BUNDLE_BIN: './bundle/ruby/bin'
