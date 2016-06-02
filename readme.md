@@ -1,6 +1,6 @@
 # **Joe Karasek**
 
-### _Web Developer Portfolio, 5.20.2016_
+### _Web Developer Portfolio, 6.2.2016_
 
 ## Description
 
@@ -10,6 +10,8 @@ _This site uses [Jekyll](https://jekyllrb.com/), a static website generator._
 
 ### Technologies used
 
+- Ruby
+- Bundler
 - Gulp
 - Jekyll
 - Node.js
@@ -17,6 +19,12 @@ _This site uses [Jekyll](https://jekyllrb.com/), a static website generator._
 - Travis CI
 
 ### Setting up the project
+
+Install Jekyll
+
+`bundler install`
+
+Install node devDependencies
 
 `npm install`
 
@@ -26,7 +34,7 @@ _This site uses [Jekyll](https://jekyllrb.com/), a static website generator._
 
 ### Launching Dev
 
-Includes build and launches all watches.
+Builds site and launches local version with browerSync, includes watches.
 
 `npm start`
 
