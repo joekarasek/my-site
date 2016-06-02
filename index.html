@@ -6,6 +6,10 @@ title: Home
 
 <!-- {% include about.html %} -->
 
+{% for post in site.posts %}
+  {{ post.title }}
+{% endfor %}
+
 <div id="projects">
   <div id="projects--header">
     <h1>Portfolio</h1>

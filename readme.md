@@ -34,9 +34,11 @@ Install node devDependencies
 
 ### Launching Dev
 
-Builds site and launches local version with browerSync, includes watches.
+Builds site and launches development server (browserSync), includes watches.
 
 `npm start`
+
+* Note: Jekyll comes with a built in development server that can be run using `jekyll serve`
 
 ### Deploy
 
